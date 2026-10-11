@@ -35,7 +35,10 @@ def lap_hoa_don(start_wh: int, stop_wh: int) -> float:
     print("--- BẮT ĐẦU LẬP HÓA ĐƠN ---")
     print(f"Chỉ số bắt đầu: {start_wh} Wh")
     print(f"Chỉ số kết thúc: {stop_wh} Wh")
+
+    # Gọi hàm tính tiền
     tong_tien = tinh_tien(start_wh, stop_wh)
+
     print(f"Điện năng tiêu thụ: {(stop_wh - start_wh) / 1000} kWh")
     print(f"Tổng tiền thanh toán: {tong_tien:,.0f} VNĐ")
     print("---------------------------\n")
